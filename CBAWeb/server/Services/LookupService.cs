@@ -5,7 +5,7 @@ using System.Reactive.Linq;
 
 namespace cbaweb
 {
-   public interface ILiveDataService
+   public interface ILookupService
    {
    }
 
@@ -16,12 +16,12 @@ namespace cbaweb
       public string Status { get; set; }
    }
 
-   public class MockLiveDataService : ILiveDataService
+   public class LookupService : ILookupService
    {
       private readonly Random _random = new Random();
 
 
-      public MockLiveDataService(IEmployeeService employeeService)
+      public LookupService(IEmployeeService employeeService)
       {
 
       }

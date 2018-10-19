@@ -23,7 +23,7 @@ namespace cbaweb
       public RoutingState RoutingState { get; set; }
 
 
-      public Dashboard(ILiveDataService liveDataService)
+      public Dashboard(ILookupService liveDataService)
       {
 
          // Regulate data update interval to no less than every 200 msecs.

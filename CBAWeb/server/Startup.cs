@@ -23,7 +23,7 @@ namespace cbaweb
          services.AddSignalR();
          services.AddDotNetify();
 
-         services.AddTransient<ILiveDataService, MockLiveDataService>();
+         services.AddTransient<ILookupService, LookupService>();
          services.AddSingleton<IEmployeeService, EmployeeService>();
       }
       public void Configure(IApplicationBuilder app)
